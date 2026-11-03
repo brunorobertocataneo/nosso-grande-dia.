@@ -1,6 +1,6 @@
 # 💍 Nosso Grande Dia — Lista de casamento (esboço v1)
 
-Protótipo de site responsivo para uma lista de casamento **com presentes simbólicos divididos em cotas**. O visual foi baseado na arte cartoon definida pelo casal e inspirado na organização de projetos HTML/CSS/JS do GitHub de Bruno (`pijaminha-e-companhia` e `meu-novo-portfolio`).
+Protótipo de site responsivo para uma lista de casamento **com presentes simbólicos divididos em cotas**. 
 
 ## Como abrir
 
