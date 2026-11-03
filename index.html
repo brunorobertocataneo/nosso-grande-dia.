@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7ef">
+  <meta name="description" content="Nossa lista de casamento: presentes simbólicos divididos em cotas para ajudar a construir nosso lar.">
+  <title>Nosso Grande Dia | Lista de presentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement" role="status"><span>♡</span> Um carinho em forma de presente, para o nosso novo lar <span>♡</span></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a href="#inicio" class="brand" aria-label="Nosso Grande Dia, voltar ao início">
+        <span class="brand-hearts" aria-hidden="true">♡♡</span><span>Nosso <em>Grande</em> Dia</span><span class="brand-spark" aria-hidden="true">✦</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">☰</button>
+      <nav id="siteNav" class="site-nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#presentes">Presentes</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#recadinho">Recadinho</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="shell hero-inner">
+        <div class="hero-art">
+          <span class="hero-hearts hearts-one" aria-hidden="true">♡</span>
+          <span class="hero-hearts hearts-two" aria-hidden="true">♥</span>
+          <img src="assets/noivos-cartoon.webp" alt="Ilustração cartoon dos noivos sorrindo, ele com óculos e terno, ela com vestido de noiva" fetchpriority="high">
+          <div class="hero-ribbon">Com carinho, de nós dois ♡</div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">✿</span> VOCÊ FAZ PARTE DESSA HISTÓRIA <span aria-hidden="true">✿</span></p>
+          <h1 id="heroTitle">Nossa Lista de<br><span>Casamento</span><span class="ring" aria-hidden="true">💍</span></h1>
+          <p class="hero-lead">Escolha um presente especial para nos ajudar a construir nosso lar. Cada gesto de carinho significa muito! <span aria-hidden="true">♥</span></p>
+          <a class="button button-main" href="#presentes"><span aria-hidden="true">🎁</span> Ver lista de presentes <span aria-hidden="true">↗</span></a>
+          <p class="hero-note">Presentes simbólicos • contribuições divididas em cotas</p>
+        </div>
+        <div class="house-illustration" aria-hidden="true">
+          <svg viewBox="0 0 260 250" role="presentation"><path d="M22 221q-17-27 2-43 14-12 28 3 4-25 20-28 26-6 26 27 16-22 32-11 9 8 2 23 24-9 30 16" fill="#93a76b"/><path d="M45 118 135 42l87 77v112H45Z" fill="#f9d8c9" stroke="#a96b54" stroke-width="6" stroke-linejoin="round"/><path d="m29 122 106-91 106 91-13 16-93-78-94 78z" fill="#e78c78" stroke="#a96753" stroke-width="6" stroke-linejoin="round"/><path d="M106 229v-73q0-8 8-8h42q8 0 8 8v73" fill="#bb8266" stroke="#95614e" stroke-width="5"/><circle cx="154" cy="193" r="3" fill="#f8dec1"/><rect x="65" y="150" width="28" height="31" rx="3" fill="#fff7d5" stroke="#95614e" stroke-width="4"/><path d="M79 150v31M65 164h28" stroke="#95614e" stroke-width="3"/><rect x="179" y="150" width="28" height="31" rx="3" fill="#fff7d5" stroke="#95614e" stroke-width="4"/><path d="M193 150v31M179 164h28" stroke="#95614e" stroke-width="3"/><path d="M126 110c-17-19-31 4 9 27 41-24 25-46 9-27l-9 8z" fill="#d86f74"/><path d="M200 40q10-22 22 0 9-22 22 0-6 20-22 29-18-10-22-29z" fill="none" stroke="#dc777b" stroke-width="5" stroke-linecap="round"/><path d="M21 227q18-12 33 4 4-32 27-25 11 4 11 24 15-19 33-7" fill="#83975f"/><path d="M170 232q15-17 31-1 2-23 18-24 20 0 24 25" fill="#a5b783"/></svg>
+          <span>O nosso cantinho 🏡</span>
+        </div>
+      </div>
+      <span class="hero-flower flower-left" aria-hidden="true">✿</span>
+      <span class="hero-flower flower-right" aria-hidden="true">✿</span>
+    </section>
+
+    <section class="gifts-section" id="presentes" aria-labelledby="giftsHeading">
+      <div class="shell">
+        <div class="section-intro">
+          <div><p class="eyebrow">FEITO COM AMOR</p><h2 id="giftsHeading">Um pedacinho do nosso sonho <span aria-hidden="true">♡</span></h2><p>Escolha um presente e contribua com quantas cotas quiser. O valor é simbólico e será recebido em dinheiro.</p></div>
+          <div class="decor-sticker" aria-hidden="true">🎀<small>Obrigada!</small></div>
+        </div>
+        <div class="filter-bar" id="filters" role="group" aria-label="Filtrar presentes por ambiente"></div>
+        <div class="gifts-grid" id="giftsGrid" aria-live="polite"></div>
+        <p class="demo-hint"><span aria-hidden="true">ⓘ</span> Protótipo demonstrativo: reservas feitas aqui funcionam apenas neste navegador. Não há Pix nem pagamento real nesta versão.</p>
+      </div>
+    </section>
+
+    <section class="steps-section shell" id="como-funciona" aria-labelledby="stepsHeading">
+      <div class="steps-title"><span aria-hidden="true">✦</span><h2 id="stepsHeading">Como funciona?</h2><span aria-hidden="true">✦</span></div>
+      <div class="steps-card">
+        <article class="step"><span class="step-number">1</span><span class="step-icon" aria-hidden="true">🎁</span><div><h3>Escolha um presente</h3><p>Encontre algo que tenha a nossa cara.</p></div></article>
+        <span class="step-arrow" aria-hidden="true">➜</span>
+        <article class="step"><span class="step-number">2</span><span class="step-icon" aria-hidden="true">💌</span><div><h3>Selecione as cotas</h3><p>Uma, duas ou quantas preferir!</p></div></article>
+        <span class="step-arrow" aria-hidden="true">➜</span>
+        <article class="step"><span class="step-number">3</span><span class="step-icon" aria-hidden="true">💕</span><div><h3>Reserve seu carinho</h3><p>Veja a simulação da reserva por 15 minutos.</p></div></article>
+      </div>
+    </section>
+
+    <section class="love-note shell" id="recadinho">
+      <div class="note-flower" aria-hidden="true">🌼</div>
+      <div><p class="eyebrow">UM RECADINHO ESPECIAL</p><h2>Mais importante que qualquer presente é ter você com a gente! <span aria-hidden="true">♡</span></h2><p>Essa lista é uma maneira carinhosa de nos ajudar a realizar o sonho do nosso lar. Obrigado por fazer parte da nossa história.</p></div>
+      <div class="note-flower" aria-hidden="true">🌿</div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>Nosso Grande Dia <span aria-hidden="true">♡</span></span><span>Feito com amor para celebrar nossa história</span><button id="resetDemo" class="text-button" type="button">Reiniciar simulação</button></div></footer>
+
+  <dialog class="gift-dialog" id="giftDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="closeDialog" aria-label="Fechar janela" type="button">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
