@@ -13,7 +13,7 @@ Não é necessário instalar Node, XAMPP, PHP ou banco de dados para **este esbo
 
 ## O que já dá para testar
 
-- Site estilo cartoon com ilustração dos noivos (WEBP transparente).
+- Site estilo cartoon com ilustração dos noivos (WebP transparente).
 - Layout adaptado para computador e celular.
 - Filtros: Cozinha, Lavanderia, Sala e Quarto.
 - 8 presentes fictícios com preço total, quantidade e valor unitário de cotas.
@@ -44,9 +44,9 @@ site_casamento_esboco_v1/
 │   ├── noivos-cartoon.webp   # Arte personalizada transparente
 │   └── illustrations/       # 8 ilustrações SVG editáveis
 ├── database/
-│   └── schema_futuro.sql    # Modelagem proposta para próxima versão
+│   └── schema.sql    # Modelagem proposta para próxima versão
 └── docs/
-    └── PROXIMAS_ETAPAS.md
+    └── proximas-etapas.md
 ```
 
 ## Personalizar textos e cores
@@ -61,4 +61,4 @@ site_casamento_esboco_v1/
 
 ## Próxima etapa recomendada
 
-Criar backend PHP + MySQL com transações, bloqueio concorrente e webhook do provedor de Pix. Veja `docs/PROXIMAS_ETAPAS.md`.
+Criar backend PHP + MySQL com transações, bloqueio concorrente e webhook do provedor de Pix. Veja `docs/proximas-etapas.md`.
