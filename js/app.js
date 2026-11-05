@@ -73,19 +73,18 @@
     cleanup();
     grid.innerHTML=GIFT_ITEMS.filter(g=>activeFilter==='Todos'||g.category===activeFilter).map(item=>{
       const gifted=item.initial+qtyConfirmed(item);
-      const held=qtyReserved(item);
       const remaining=qtyAvailable(item);
       const progress=Math.round((gifted/item.quotas)*100);
       const piece=item.value/item.quotas;
       return `<article class="gift-card">
-        <span class="little-heart" aria-hidden="true">♡</span>
         <div class="gift-icon-wrap"><img src="${item.image}" alt="Ilustração de ${item.name.toLowerCase()}" loading="lazy"></div>
+        <span class="gift-category">${item.category}</span>
         <h3 class="gift-name">${item.name}</h3>
-        <div class="gift-value">Valor simbólico: <b>${fmt.format(item.value/100)}</b></div>
-        <span class="quota-chip">${item.quotas} cotas de ${fmt.format(piece/100)}</span>
+        <span class="quota-chip">${fmt.format(piece/100)} por cota</span>
+        <div class="gift-value">Valor total <b>${fmt.format(item.value/100)}</b></div>
         <div class="progress-track" role="progressbar" aria-label="${item.name}: cotas presenteadas" aria-valuemin="0" aria-valuemax="${item.quotas}" aria-valuenow="${gifted}"><div class="progress-fill" style="width:${progress}%"></div></div>
-        <p class="gift-count">${gifted} de ${item.quotas} cotas escolhidas${held?` · ${held} reservada${held>1?'s':''}`:''}</p>
-        <button type="button" class="gift-button" data-gift="${item.id}" ${remaining===0?'disabled':''}>${remaining===0?'♡ Sem cotas disponíveis':'🎁 Contribuir'}</button>
+        <p class="gift-count">${remaining} de ${item.quotas} cotas disponíveis</p>
+        <button type="button" class="gift-button" data-gift="${item.id}" ${remaining===0?'disabled':''}>${remaining===0?'Sem cotas disponíveis':'Contribuir'}</button>
       </article>`;
     }).join('');
     grid.querySelectorAll('[data-gift]').forEach(button=>button.addEventListener('click',()=>openGift(button.dataset.gift)));
